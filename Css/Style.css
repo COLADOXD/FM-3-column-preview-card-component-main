@@ -1,0 +1,114 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1200px;
+  background-color: #0f182b;
+  font-size: 15px;
+}
+
+section {
+  height: 1100px;
+
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+  margin: 0px 20px;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 45px;
+}
+
+p {
+  color: #acd3d6;
+}
+
+button {
+  height: 50px;
+  width: 120px;
+  border-radius: 25px;
+  border: white;
+  margin-top: 18px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.color-one {
+  color: #d5893d;
+}
+
+.color-two {
+  color: #2c6770;
+}
+
+.color-three {
+  color: #183f3f;
+}
+
+.first {
+  background-color: #d5893d;
+  border-radius: 10px 10px 0px 0px;
+  padding: 40px;
+}
+
+.first > p {
+  color: #efba78;
+}
+
+.second {
+  background-color: #2c6770;
+  padding: 40px;
+}
+
+.third {
+  background-color: #183f3f;
+  border-radius: 0px 0px 10px 10px;
+  padding: 40px;
+}
+
+@media (min-width: 700px) {
+  main {
+    height: 100vh;
+  }
+
+  button {
+    position: absolute;
+    bottom: 260px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+  }
+
+  .first {
+    flex: 1;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .second {
+    flex: 1;
+  }
+
+  .third {
+    flex: 1;
+    border-radius: 0px 10px 10px 0px;
+  }
+}
